@@ -62,3 +62,8 @@ The sentiment engine (`analyzer.py`) uses a hybrid approach to ensure accuracy i
 * **Message-Level Scoring**: The application evaluates every individual user message in real-time.
 * **Visual Display**: Each user message is immediately followed by a color-coded sentiment tag (e.g., `Sentiment: Negative (-0.38)`) displayed in the chat interface.
 * **Trend Summary**: The sidebar analytics include a "Mood Trend" indicator (e.g., "Mood Improving") as an optional enhancement.
+##  Innovations & Bonus Features
+
+* **LLM Integration**: Instead of hardcoded responses, the bot uses **Llama 3.1 via Groq** to understand context, display empathy, and answer complex queries.
+* **Real-Time Dashboard**: A sidebar dashboard updates instantly with every message, showing the running average score and overall conversation mood.
+* **Production Architecture**: The code is modular, separating the logic (`analyzer.py`), the AI service (`llm_service.py`), and the UI (`app.py`) for maintainability.
